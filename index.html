@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<!-- importante para móviles -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>App de Entrenamientos</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:15px;
+font-size:20px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:15px;
+box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+margin-top:0;
+}
+
+button{
+width:100%;
+padding:15px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background:#27ae60;
+color:white;
+margin-top:10px;
+}
+
+button:active{
+background:#219150;
+}
+
+#mensaje{
+margin-top:15px;
+font-weight:bold;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+App de Entrenamientos
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Rutina del día</h2>
+<p><strong>Ejercicio:</strong> Flexiones</p>
+<p><strong>Series:</strong> 3</p>
+<p><strong>Repeticiones:</strong> 15</p>
+
+<button onclick="iniciar()">Iniciar entrenamiento</button>
+</div>
+
+<div id="mensaje"></div>
+
+</div>
+
+<script>
+
+function iniciar(){
+document.getElementById("mensaje").innerHTML="Entrenamiento iniciado. ¡Éxitos!";
+}
+
+</script>
+
+</body>
+</html>
