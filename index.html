@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>App de Entrenamientos</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+text-align:center;
+padding:40px;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:300px;
+margin:auto;
+box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}
+
+button{
+padding:12px 20px;
+font-size:16px;
+border:none;
+border-radius:5px;
+background-color:#28a745;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#218838;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Rutina del día</h1>
+
+<p>Ejercicio: Flexiones</p>
+<p>Series: 3</p>
+<p>Repeticiones: 15</p>
+
+<button onclick="iniciarEntrenamiento()">Iniciar entrenamiento</button>
+
+<p id="mensaje"></p>
+
+</div>
+
+<script>
+
+function iniciarEntrenamiento(){
+document.getElementById("mensaje").innerHTML="Entrenamiento iniciado. ¡Buena suerte!";
+}
+
+</script>
+
+</body>
+</html>
